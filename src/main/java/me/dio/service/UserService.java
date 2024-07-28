@@ -1,10 +1,10 @@
-package me.dio.service;
+package com.example.santanderdevweek.service;
 
-import me.dio.domain.model.User;
+import com.example.santanderdevweek.data.local.Transaction;
+import com.example.santanderdevweek.data.local.User;
 
 public interface UserService {
-
-    User findById(Long id);
-
-    User create(User userToCreate);
+    User getUserById(int id);
+    void createUser(User user);
+    void performTransaction(Transaction transaction);
 }
