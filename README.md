@@ -65,7 +65,8 @@ classDiagram
 
 ## FUNCIONALIDADE ADICIONADA 
 
-###Transações Bancárias
+**Transações Bancárias**
+
   Adicionamos uma nova funcionalidade para gerenciar transações bancárias, permitindo depósitos, retiradas e transferências entre contas.
 
   - **Classe Transaction**: Representa uma transação bancária, contendo informações como ID, valor, tipo (DEPÓSITO, RETIRADA, TRANSFERÊNCIA), data, conta de origem e conta de destino.
@@ -73,9 +74,9 @@ classDiagram
   - **UserController**: Adicionados novos endpoints para iniciar transações.
 
 
-##Endpoints de Transações
+**Endpoints de Transações**
 - **POST /users/transaction**:Realiza uma nova transação. Exemplo de corpo da requisição:
-```mermaid
+  
 {
   "amount": 100.0,
   "type": "DEPOSIT",
@@ -87,7 +88,6 @@ classDiagram
     "limit": 500.0
   }
 }
-```
 
 ## IMPORTANTE
 
